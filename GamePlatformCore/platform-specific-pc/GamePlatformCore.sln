@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BBCore", "BBCore\BBCore.vcproj", "{D9ED221D-7E9A-4F63-9361-09EFCA679BF2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BBCoreTest", "BBCoreTest\BBCoreTest.vcproj", "{EA280AAC-FE68-42BC-A1E9-9EB519EDBBE0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D9ED221D-7E9A-4F63-9361-09EFCA679BF2} = {D9ED221D-7E9A-4F63-9361-09EFCA679BF2}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9ED221D-7E9A-4F63-9361-09EFCA679BF2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D9ED221D-7E9A-4F63-9361-09EFCA679BF2}.Debug|Win32.Build.0 = Debug|Win32
+		{D9ED221D-7E9A-4F63-9361-09EFCA679BF2}.Release|Win32.ActiveCfg = Release|Win32
+		{D9ED221D-7E9A-4F63-9361-09EFCA679BF2}.Release|Win32.Build.0 = Release|Win32
+		{EA280AAC-FE68-42BC-A1E9-9EB519EDBBE0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EA280AAC-FE68-42BC-A1E9-9EB519EDBBE0}.Debug|Win32.Build.0 = Debug|Win32
+		{EA280AAC-FE68-42BC-A1E9-9EB519EDBBE0}.Release|Win32.ActiveCfg = Release|Win32
+		{EA280AAC-FE68-42BC-A1E9-9EB519EDBBE0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

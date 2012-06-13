@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B7BE32012540CB600165E4A /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7BE31E12540CB600165E4A /* libcrypto.a */; };
+		1B7BE32112540CB600165E4A /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7BE31F12540CB600165E4A /* libssl.a */; };
+		1BC180B71331971800E453F8 /* FileJson.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BC180B21331971800E453F8 /* FileJson.cpp */; };
+		1BC180B81331971800E453F8 /* FileJson.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BC180B31331971800E453F8 /* FileJson.h */; };
+		1BC180B91331971800E453F8 /* FileStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BC180B41331971800E453F8 /* FileStream.cpp */; };
+		1BC180BA1331971800E453F8 /* FileStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BC180B51331971800E453F8 /* FileStream.h */; };
+		1BC180GamePlatform1331971800E453F8 /* json_tool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BC180B61331971800E453F8 /* json_tool.h */; };
+		3B7ED93C11E7ADC9008D2371 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7ED93B11E7ADC9008D2371 /* CoreLocation.framework */; };
+		3BED1047115D8E2E003483E4 /* File.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BED103B115D8E2E003483E4 /* File.cpp */; };
+		3BED1048115D8E2E003483E4 /* ThreadUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BED103C115D8E2E003483E4 /* ThreadUtil.cpp */; };
+		3BED1049115D8E2E003483E4 /* ThreadUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BED103D115D8E2E003483E4 /* ThreadUtil.h */; };
+		3BED104A115D8E2E003483E4 /* WebRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BED103E115D8E2E003483E4 /* WebRequest.cpp */; };
+		3BED104B115D8E2E003483E4 /* WebRequestThreaded.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BED103F115D8E2E003483E4 /* WebRequestThreaded.cpp */; };
+		3BED104C115D8E2E003483E4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BED1040115D8E2E003483E4 /* main.cpp */; };
+		3GamePlatform992E7116170C400B146D6 /* autolink.h in Headers */ = {isa = PBXBuildFile; fileRef = 3GamePlatform992CC116170C400B146D6 /* autolink.h */; };
+		3GamePlatform992E8116170C400B146D6 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 3GamePlatform992CD116170C400B146D6 /* config.h */; };
+		3GamePlatform992E9116170C400B146D6 /* features.h in Headers */ = {isa = PBXBuildFile; fileRef = 3GamePlatform992CE116170C400B146D6 /* features.h */; };
+		3GamePlatform992EA116170C400B146D6 /* forwards.h in Headers */ = {isa = PBXBuildFile; fileRef = 3GamePlatform992CF116170C400B146D6 /* forwards.h */; };
+		3GamePlatform992EB116170C400B146D6 /* json.h in Headers */ = {isa = PBXBuildFile; fileRef = 3GamePlatform992D0116170C400B146D6 /* json.h */; };
+		3GamePlatform992EC116170C400B146D6 /* json_batchallocator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3GamePlatform992D1116170C400B146D6 /* json_batchallocator.h */; };
+		3GamePlatform992ED116170C400B146D6 /* json_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3GamePlatform992D4116170C400B146D6 /* json_reader.cpp */; };
+		3GamePlatform992EE116170C400B146D6 /* json_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3GamePlatform992D5116170C400B146D6 /* json_value.cpp */; };
+		3GamePlatform992EF116170C400B146D6 /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3GamePlatform992D7116170C400B146D6 /* json_writer.cpp */; };
+		3GamePlatform992F0116170C400B146D6 /* reader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3GamePlatform992D8116170C400B146D6 /* reader.h */; };
+		3GamePlatform992F1116170C400B146D6 /* value.h in Headers */ = {isa = PBXBuildFile; fileRef = 3GamePlatform992D9116170C400B146D6 /* value.h */; };
+		3GamePlatform992F2116170C400B146D6 /* writer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3GamePlatform992DA116170C400B146D6 /* writer.h */; };
+		AA1D7812116BCD1C00657488 /* UploadThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA1D73F3116BC96D00657488 /* UploadThread.cpp */; };
+		F6179D85115CB94200AA58EA /* Enum.h in Headers */ = {isa = PBXBuildFile; fileRef = F6179D75115CB94200AA58EA /* Enum.h */; };
+		F6179D86115CB94200AA58EA /* File.h in Headers */ = {isa = PBXBuildFile; fileRef = F6179D76115CB94200AA58EA /* File.h */; };
+		F6179D88115CB94200AA58EA /* Header.h in Headers */ = {isa = PBXBuildFile; fileRef = F6179D78115CB94200AA58EA /* Header.h */; };
+		F6179D89115CB94200AA58EA /* IMutex.h in Headers */ = {isa = PBXBuildFile; fileRef = F6179D79115CB94200AA58EA /* IMutex.h */; };
+		F6179D8A115CB94200AA58EA /* Lock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6179D7A115CB94200AA58EA /* Lock.cpp */; };
+		F6179D8B115CB94200AA58EA /* Lock.h in Headers */ = {isa = PBXBuildFile; fileRef = F6179D7B115CB94200AA58EA /* Lock.h */; };
+		F6179D8C115CB94200AA58EA /* Mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6179D7C115CB94200AA58EA /* Mutex.cpp */; };
+		F6179D8D115CB94200AA58EA /* Mutex.h in Headers */ = {isa = PBXBuildFile; fileRef = F6179D7D115CB94200AA58EA /* Mutex.h */; };
+		F6179D8E115CB94200AA58EA /* Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6179D7E115CB94200AA58EA /* Thread.cpp */; };
+		F6179D8F115CB94200AA58EA /* Thread.h in Headers */ = {isa = PBXBuildFile; fileRef = F6179D7F115CB94200AA58EA /* Thread.h */; };
+		F6179D90115CB94200AA58EA /* WebRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F6179D80115CB94200AA58EA /* WebRequest.h */; };
+		F6179D92115CB94200AA58EA /* WebRequestThreaded.h in Headers */ = {isa = PBXBuildFile; fileRef = F6179D82115CB94200AA58EA /* WebRequestThreaded.h */; };
+		F6179DB2115CBAB400AA58EA /* Build.h in Headers */ = {isa = PBXBuildFile; fileRef = F6179DB1115CBAB400AA58EA /* Build.h */; };
+		F66969051148DEC3000D8DA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACGamePlatformE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B7BE31E12540CB600165E4A /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../lib/iphone/Release-iphoneos/libcrypto.a"; sourceTree = SOURCE_ROOT; };
+		1B7BE31F12540CB600165E4A /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "../lib/iphone/Release-iphoneos/libssl.a"; sourceTree = SOURCE_ROOT; };
+		1BC180B21331971800E453F8 /* FileJson.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileJson.cpp; path = ../code/FileJson.cpp; sourceTree = SOURCE_ROOT; };
+		1BC180B31331971800E453F8 /* FileJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileJson.h; path = ../code/FileJson.h; sourceTree = SOURCE_ROOT; };
+		1BC180B41331971800E453F8 /* FileStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileStream.cpp; path = ../code/FileStream.cpp; sourceTree = SOURCE_ROOT; };
+		1BC180B51331971800E453F8 /* FileStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileStream.h; path = ../code/FileStream.h; sourceTree = SOURCE_ROOT; };
+		1BC180B61331971800E453F8 /* json_tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = json_tool.h; path = ../code/json_tool.h; sourceTree = SOURCE_ROOT; };
+		3B0F72931149C6B700365F90 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../lib/iphone/libcrypto_arm.a; sourceTree = SOURCE_ROOT; };
+		3B0F72941149C6B700365F90 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../lib/iphone/libssl_arm.a; sourceTree = SOURCE_ROOT; };
+		3B0F72991149C6D100365F90 /* libcrypto_i386.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto_i386.a; path = ../lib/iphone/libcrypto_i386.a; sourceTree = SOURCE_ROOT; };
+		3B0F729A1149C6D100365F90 /* libssl_i386.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl_i386.a; path = ../lib/iphone/libssl_i386.a; sourceTree = SOURCE_ROOT; };
+		3B7ED93B11E7ADC9008D2371 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = /System/Library/Frameworks/CoreLocation.framework; sourceTree = "<absolute>"; };
+		3BED1005115D8D4E003483E4 /* liblib-gameplatform-core.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblib-gameplatform-core.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BED103B115D8E2E003483E4 /* File.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = File.cpp; path = ../code/File.cpp; sourceTree = SOURCE_ROOT; };
+		3BED103C115D8E2E003483E4 /* ThreadUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ThreadUtil.cpp; path = ../code/ThreadUtil.cpp; sourceTree = SOURCE_ROOT; };
+		3BED103D115D8E2E003483E4 /* ThreadUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreadUtil.h; path = ../code/ThreadUtil.h; sourceTree = SOURCE_ROOT; };
+		3BED103E115D8E2E003483E4 /* WebRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WebRequest.cpp; path = ../code/WebRequest.cpp; sourceTree = SOURCE_ROOT; };
+		3BED103F115D8E2E003483E4 /* WebRequestThreaded.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WebRequestThreaded.cpp; path = ../code/WebRequestThreaded.cpp; sourceTree = SOURCE_ROOT; };
+		3BED1040115D8E2E003483E4 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../code/main.cpp; sourceTree = SOURCE_ROOT; };
+		3GamePlatform992CC116170C400B146D6 /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = autolink.h; path = ../code/autolink.h; sourceTree = SOURCE_ROOT; };
+		3GamePlatform992CD116170C400B146D6 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../code/config.h; sourceTree = SOURCE_ROOT; };
+		3GamePlatform992CE116170C400B146D6 /* features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = features.h; path = ../code/features.h; sourceTree = SOURCE_ROOT; };
+		3GamePlatform992CF116170C400B146D6 /* forwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = forwards.h; path = ../code/forwards.h; sourceTree = SOURCE_ROOT; };
+		3GamePlatform992D0116170C400B146D6 /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = json.h; path = ../code/json.h; sourceTree = SOURCE_ROOT; };
+		3GamePlatform992D1116170C400B146D6 /* json_batchallocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = json_batchallocator.h; path = ../code/json_batchallocator.h; sourceTree = SOURCE_ROOT; };
+		3GamePlatform992D2116170C400B146D6 /* json_internalarray.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = json_internalarray.inl; path = ../code/json_internalarray.inl; sourceTree = SOURCE_ROOT; };
+		3GamePlatform992D3116170C400B146D6 /* json_internalmap.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = json_internalmap.inl; path = ../code/json_internalmap.inl; sourceTree = SOURCE_ROOT; };
+		3GamePlatform992D4116170C400B146D6 /* json_reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json_reader.cpp; path = ../code/json_reader.cpp; sourceTree = SOURCE_ROOT; };
+		3GamePlatform992D5116170C400B146D6 /* json_value.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json_value.cpp; path = ../code/json_value.cpp; sourceTree = SOURCE_ROOT; };
+		3GamePlatform992D6116170C400B146D6 /* json_valueiterator.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = json_valueiterator.inl; path = ../code/json_valueiterator.inl; sourceTree = SOURCE_ROOT; };
+		3GamePlatform992D7116170C400B146D6 /* json_writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json_writer.cpp; path = ../code/json_writer.cpp; sourceTree = SOURCE_ROOT; };
+		3GamePlatform992D8116170C400B146D6 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = reader.h; path = ../code/reader.h; sourceTree = SOURCE_ROOT; };
+		3GamePlatform992D9116170C400B146D6 /* value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = value.h; path = ../code/value.h; sourceTree = SOURCE_ROOT; };
+		3GamePlatform992DA116170C400B146D6 /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = writer.h; path = ../code/writer.h; sourceTree = SOURCE_ROOT; };
+		AA1D73F3116BC96D00657488 /* UploadThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UploadThread.cpp; path = ../code/UploadThread.cpp; sourceTree = SOURCE_ROOT; };
+		AA1D73F4116BC96D00657488 /* UploadThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UploadThread.h; path = ../code/UploadThread.h; sourceTree = SOURCE_ROOT; };
+		AACGamePlatformE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F6179D75115CB94200AA58EA /* Enum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Enum.h; path = ../code/Enum.h; sourceTree = SOURCE_ROOT; };
+		F6179D76115CB94200AA58EA /* File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = File.h; path = ../code/File.h; sourceTree = SOURCE_ROOT; };
+		F6179D78115CB94200AA58EA /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Header.h; path = ../code/Header.h; sourceTree = SOURCE_ROOT; };
+		F6179D79115CB94200AA58EA /* IMutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMutex.h; path = ../code/IMutex.h; sourceTree = SOURCE_ROOT; };
+		F6179D7A115CB94200AA58EA /* Lock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Lock.cpp; path = ../code/Lock.cpp; sourceTree = SOURCE_ROOT; };
+		F6179D7B115CB94200AA58EA /* Lock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lock.h; path = ../code/Lock.h; sourceTree = SOURCE_ROOT; };
+		F6179D7C115CB94200AA58EA /* Mutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Mutex.cpp; path = ../code/Mutex.cpp; sourceTree = SOURCE_ROOT; };
+		F6179D7D115CB94200AA58EA /* Mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mutex.h; path = ../code/Mutex.h; sourceTree = SOURCE_ROOT; };
+		F6179D7E115CB94200AA58EA /* Thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Thread.cpp; path = ../code/Thread.cpp; sourceTree = SOURCE_ROOT; };
+		F6179D7F115CB94200AA58EA /* Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Thread.h; path = ../code/Thread.h; sourceTree = SOURCE_ROOT; };
+		F6179D80115CB94200AA58EA /* WebRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebRequest.h; path = ../code/WebRequest.h; sourceTree = SOURCE_ROOT; };
+		F6179D82115CB94200AA58EA /* WebRequestThreaded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebRequestThreaded.h; path = ../code/WebRequestThreaded.h; sourceTree = SOURCE_ROOT; };
+		F6179DB1115CBAB400AA58EA /* Build.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Build.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F66968ED1148DE91000D8DA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66969051148DEC3000D8DA9 /* Foundation.framework in Frameworks */,
+				3B7ED93C11E7ADC9008D2371 /* CoreLocation.framework in Frameworks */,
+				1B7BE32012540CB600165E4A /* libcrypto.a in Frameworks */,
+				1B7BE32112540CB600165E4A /* libssl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BED1005115D8D4E003483E4 /* liblib-gameplatform-core.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* BoxCore */ = {
+			isa = PBXGroup;
+			children = (
+				1B7BE31E12540CB600165E4A /* libcrypto.a */,
+				1B7BE31F12540CB600165E4A /* libssl.a */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = BoxCore;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F72991149C6D100365F90 /* libcrypto_i386.a */,
+				3B0F729A1149C6D100365F90 /* libssl_i386.a */,
+				3B0F72931149C6B700365F90 /* libcrypto.a */,
+				3B0F72941149C6B700365F90 /* libssl.a */,
+				AACGamePlatformE490F95108600F1A2B1 /* Foundation.framework */,
+				3B7ED93B11E7ADC9008D2371 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1BC180B21331971800E453F8 /* FileJson.cpp */,
+				1BC180B31331971800E453F8 /* FileJson.h */,
+				1BC180B41331971800E453F8 /* FileStream.cpp */,
+				1BC180B51331971800E453F8 /* FileStream.h */,
+				1BC180B61331971800E453F8 /* json_tool.h */,
+				AA1D73F3116BC96D00657488 /* UploadThread.cpp */,
+				AA1D73F4116BC96D00657488 /* UploadThread.h */,
+				3BED103B115D8E2E003483E4 /* File.cpp */,
+				3BED103C115D8E2E003483E4 /* ThreadUtil.cpp */,
+				3BED103D115D8E2E003483E4 /* ThreadUtil.h */,
+				3BED103E115D8E2E003483E4 /* WebRequest.cpp */,
+				3BED103F115D8E2E003483E4 /* WebRequestThreaded.cpp */,
+				3BED1040115D8E2E003483E4 /* main.cpp */,
+				F6179DB1115CBAB400AA58EA /* Build.h */,
+				F6179D75115CB94200AA58EA /* Enum.h */,
+				F6179D76115CB94200AA58EA /* File.h */,
+				F6179D78115CB94200AA58EA /* Header.h */,
+				F6179D79115CB94200AA58EA /* IMutex.h */,
+				F6179D7A115CB94200AA58EA /* Lock.cpp */,
+				F6179D7B115CB94200AA58EA /* Lock.h */,
+				F6179D7C115CB94200AA58EA /* Mutex.cpp */,
+				F6179D7D115CB94200AA58EA /* Mutex.h */,
+				F6179D7E115CB94200AA58EA /* Thread.cpp */,
+				F6179D7F115CB94200AA58EA /* Thread.h */,
+				F6179D80115CB94200AA58EA /* WebRequest.h */,
+				F6179D82115CB94200AA58EA /* WebRequestThreaded.h */,
+				3B8E53F91148099400010722 /* syndication */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		3B8E53F91148099400010722 /* syndication */ = {
+			isa = PBXGroup;
+			children = (
+				3B8E53FA114809A000010722 /* json */,
+			);
+			name = syndication;
+			sourceTree = "<group>";
+		};
+		3B8E53FA114809A000010722 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				3GamePlatform992CC116170C400B146D6 /* autolink.h */,
+				3GamePlatform992CD116170C400B146D6 /* config.h */,
+				3GamePlatform992CE116170C400B146D6 /* features.h */,
+				3GamePlatform992CF116170C400B146D6 /* forwards.h */,
+				3GamePlatform992D0116170C400B146D6 /* json.h */,
+				3GamePlatform992D1116170C400B146D6 /* json_batchallocator.h */,
+				3GamePlatform992D2116170C400B146D6 /* json_internalarray.inl */,
+				3GamePlatform992D3116170C400B146D6 /* json_internalmap.inl */,
+				3GamePlatform992D4116170C400B146D6 /* json_reader.cpp */,
+				3GamePlatform992D5116170C400B146D6 /* json_value.cpp */,
+				3GamePlatform992D6116170C400B146D6 /* json_valueiterator.inl */,
+				3GamePlatform992D7116170C400B146D6 /* json_writer.cpp */,
+				3GamePlatform992D8116170C400B146D6 /* reader.h */,
+				3GamePlatform992D9116170C400B146D6 /* value.h */,
+				3GamePlatform992DA116170C400B146D6 /* writer.h */,
+			);
+			name = json;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F66968EB1148DE91000D8DA9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6179D85115CB94200AA58EA /* Enum.h in Headers */,
+				F6179D86115CB94200AA58EA /* File.h in Headers */,
+				F6179D88115CB94200AA58EA /* Header.h in Headers */,
+				F6179D89115CB94200AA58EA /* IMutex.h in Headers */,
+				F6179D8B115CB94200AA58EA /* Lock.h in Headers */,
+				F6179D8D115CB94200AA58EA /* Mutex.h in Headers */,
+				F6179D8F115CB94200AA58EA /* Thread.h in Headers */,
+				F6179D90115CB94200AA58EA /* WebRequest.h in Headers */,
+				F6179D92115CB94200AA58EA /* WebRequestThreaded.h in Headers */,
+				F6179DB2115CBAB400AA58EA /* Build.h in Headers */,
+				3BED1049115D8E2E003483E4 /* ThreadUtil.h in Headers */,
+				3GamePlatform992E7116170C400B146D6 /* autolink.h in Headers */,
+				3GamePlatform992E8116170C400B146D6 /* config.h in Headers */,
+				3GamePlatform992E9116170C400B146D6 /* features.h in Headers */,
+				3GamePlatform992EA116170C400B146D6 /* forwards.h in Headers */,
+				3GamePlatform992EB116170C400B146D6 /* json.h in Headers */,
+				3GamePlatform992EC116170C400B146D6 /* json_batchallocator.h in Headers */,
+				3GamePlatform992F0116170C400B146D6 /* reader.h in Headers */,
+				3GamePlatform992F1116170C400B146D6 /* value.h in Headers */,
+				3GamePlatform992F2116170C400B146D6 /* writer.h in Headers */,
+				1BC180B81331971800E453F8 /* FileJson.h in Headers */,
+				1BC180BA1331971800E453F8 /* FileStream.h in Headers */,
+				1BC180GamePlatform1331971800E453F8 /* json_tool.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F66968EE1148DE91000D8DA9 /* GamePlatformcore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F66969321148DF0F000D8DA9 /* Build configuration list for PBXNativeTarget "GamePlatformcore" */;
+			buildPhases = (
+				F66968EB1148DE91000D8DA9 /* Headers */,
+				F66968EC1148DE91000D8DA9 /* Sources */,
+				F66968ED1148DE91000D8DA9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GamePlatformcore;
+			productName = "liGamePlatformoxcore-arm";
+			productReference = 3BED1005115D8D4E003483E4 /* liblib-gameplatform-core.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "GamePlatformCore" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* BoxCore */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F66968EE1148DE91000D8DA9 /* GamePlatformcore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F66968EC1148DE91000D8DA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6179D8A115CB94200AA58EA /* Lock.cpp in Sources */,
+				F6179D8C115CB94200AA58EA /* Mutex.cpp in Sources */,
+				F6179D8E115CB94200AA58EA /* Thread.cpp in Sources */,
+				3BED1047115D8E2E003483E4 /* File.cpp in Sources */,
+				3BED1048115D8E2E003483E4 /* ThreadUtil.cpp in Sources */,
+				3BED104A115D8E2E003483E4 /* WebRequest.cpp in Sources */,
+				3BED104B115D8E2E003483E4 /* WebRequestThreaded.cpp in Sources */,
+				3BED104C115D8E2E003483E4 /* main.cpp in Sources */,
+				3GamePlatform992ED116170C400B146D6 /* json_reader.cpp in Sources */,
+				3GamePlatform992EE116170C400B146D6 /* json_value.cpp in Sources */,
+				3GamePlatform992EF116170C400B146D6 /* json_writer.cpp in Sources */,
+				AA1D7812116BCD1C00657488 /* UploadThread.cpp in Sources */,
+				1BC180B71331971800E453F8 /* FileJson.cpp in Sources */,
+				1BC180B91331971800E453F8 /* FileStream.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Release;
+		};
+		F66968F01148DE91000D8DA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/include/platform-specific-iphone",
+					"$(SRCROOT)/include",
+					../include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../lib/iphone/$(CONFIGURATION)${EFFECTIVE_PLATFORM_NAME}\"",
+					"\"$(SRCROOT)/../lib/iphone/Release-iphoneos\"",
+				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				PRODUCT_NAME = "lib-gameplatform-core";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = ../include;
+				VALID_ARCHS = "armv7 i386";
+			};
+			name = Debug;
+		};
+		F66968F11148DE91000D8DA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/include/platform-specific-iphone",
+					"$(SRCROOT)/include",
+					../include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../lib/iphone/$(CONFIGURATION)${EFFECTIVE_PLATFORM_NAME}\"",
+					"\"$(SRCROOT)/../lib/iphone/Release-iphoneos\"",
+				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				PRODUCT_NAME = "lib-gameplatform-core";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = ../include;
+				VALID_ARCHS = "armv7 i386";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "GamePlatformCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F66969321148DF0F000D8DA9 /* Build configuration list for PBXNativeTarget "GamePlatformcore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F66968F01148DE91000D8DA9 /* Debug */,
+				F66968F11148DE91000D8DA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
