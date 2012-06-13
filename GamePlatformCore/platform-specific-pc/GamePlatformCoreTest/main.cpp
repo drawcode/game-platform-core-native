@@ -1,10 +1,10 @@
-#include "BBHeader.h"
-#include "BBWebRequest.h"
-#include "BBWebRequestThreaded.h"
-#include "BBThread.h"
-#include "BBMutex.h"
+#include "GamePlatformHeader.h"
+#include "GamePlatformWebRequest.h"
+#include "GamePlatformWebRequestThreaded.h"
+#include "GamePlatformThread.h"
+#include "GamePlatformMutex.h"
 
-using namespace bb;
+using namespace GamePlatform;
 
 int main(int argc, char *argv[])
 {        
@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     char * buffer;
     size_t result;
 
-    file = fopen("c:\\_backup_\\ad.0.report", "rb");
+    file = fopen("c:\\_backup_\\ad.report", "rb");
     fseek(file, 0 , SEEK_END);
     size = ftell(file);
     rewind(file);
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
     fclose(file);
     free(buffer);
     
-    int success = webreq1->Request(HTTP_POST, "rewards.blackboxinteractivelive.com", 80, "/api/v1/profile-ad-tracking/set/", _data);        
+    int success = webreq1->Request(HTTP_POST, "yourserver.com", 80, "/api/action/", _data);        
         
     printf("Completed request...");
     printf("HEADER %s", webreq1->mMessageHeader.c_str());
@@ -69,9 +69,8 @@ int main(int argc, char *argv[])
     //}
  
     //printf("Running request...");
-    //http://www.blackboxinteractive.com/Members/ATVLite.ashx?pid=2&cid=9B4AA5CA-454E-40EC-B6A7-B2385F1522DE&ca=2&pkg=bb&profileIndex=9B4AA5CA-454E-40EC-B6A7-B2385F1522DE&udid=9B4AA5CA-454E-40EC-B6A7-B2385F1522DE
-
-    //webreq1->Request(HTTP_GET, "www.blackboxinteractive.com", 80, "/Members/ATVLite.ashx?pid=2&cid=9B4AA5CA-454E-40EC-B6A7-B2385F1522DE&ca=2&pkg=bb&profileIndex=9B4AA5CA-454E-40EC-B6A7-B2385F1522DE&udid=9B4AA5CA-454E-40EC-B6A7-B2385F1522DE", "");
+   
+    //webreq1->Request(HTTP_GET, "yourserver.com", 80, "/api/action", "");
     //webreq1->Request(HTTPS_GET, "live.2xlgames.com", 443, "/", "");
     //webreq->Request(HTTPS_GET, "live.2xlgames.com", 443, "/", "");
 

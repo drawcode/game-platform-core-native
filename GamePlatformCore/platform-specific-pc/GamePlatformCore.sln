@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BBCore", "BBCore\BBCore.vcproj", "{D9ED221D-7E9A-4F63-9361-09EFCA679BF2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GamePlatformCore", "GamePlatformCore\GamePlatformCore.vcproj", "{D9ED221D-7E9A-4F63-9361-09EFCA679BF2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BBCoreTest", "BBCoreTest\BBCoreTest.vcproj", "{EA280AAC-FE68-42BC-A1E9-9EB519EDBBE0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GamePlatformCoreTest", "GamePlatformCoreTest\GamePlatformCoreTest.vcproj", "{EA280AAC-FE68-42BC-A1E9-9EB519EDBBE0}"
 	ProjectSection(ProjectDependencies) = postProject
 		{D9ED221D-7E9A-4F63-9361-09EFCA679BF2} = {D9ED221D-7E9A-4F63-9361-09EFCA679BF2}
 	EndProjectSection

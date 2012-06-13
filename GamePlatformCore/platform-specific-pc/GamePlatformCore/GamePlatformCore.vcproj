@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="BBCore"
+	Name="GamePlatformCore"
 	ProjectGUID="{D9ED221D-7E9A-4F63-9361-09EFCA679BF2}"
-	RootNamespace="BBCore"
+	RootNamespace="GamePlatformCore"
 	Keyword="ManagedCProj"
 	TargetFrameworkVersion="196613"
 	>
@@ -233,104 +233,104 @@
 			Name="ios"
 			>
 			<File
-				RelativePath="..\..\platform-specific-iphone\LocationController.h"
+				RelativePath="..\..\platform-specific-ios\LocationController.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\platform-specific-iphone\LocationController.m"
+				RelativePath="..\..\platform-specific-ios\LocationController.m"
 				>
 			</File>
 		</Filter>
 		<File
-			RelativePath="..\..\code\BBEnum.h"
+			RelativePath="..\..\code\Enum.h"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBFile.cpp"
+			RelativePath="..\..\code\File.cpp"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBFile.h"
+			RelativePath="..\..\code\File.h"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBFileJson.cpp"
+			RelativePath="..\..\code\FileJson.cpp"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBFileJson.h"
+			RelativePath="..\..\code\FileJson.h"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBFileStream.cpp"
+			RelativePath="..\..\code\FileStream.cpp"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBFileStream.h"
+			RelativePath="..\..\code\FileStream.h"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBHeader.h"
+			RelativePath="..\..\code\Header.h"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBIMutex.h"
+			RelativePath="..\..\code\IMutex.h"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBLock.cpp"
+			RelativePath="..\..\code\Lock.cpp"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBLock.h"
+			RelativePath="..\..\code\Lock.h"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBMutex.cpp"
+			RelativePath="..\..\code\Mutex.cpp"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBMutex.h"
+			RelativePath="..\..\code\Mutex.h"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBThread.cpp"
+			RelativePath="..\..\code\Thread.cpp"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBThread.h"
+			RelativePath="..\..\code\Thread.h"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBThreadUtil.cpp"
+			RelativePath="..\..\code\ThreadUtil.cpp"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBThreadUtil.h"
+			RelativePath="..\..\code\ThreadUtil.h"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBUploadThread.cpp"
+			RelativePath="..\..\code\UploadThread.cpp"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBUploadThread.h"
+			RelativePath="..\..\code\UploadThread.h"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBWebRequest.cpp"
+			RelativePath="..\..\code\WebRequest.cpp"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBWebRequest.h"
+			RelativePath="..\..\code\WebRequest.h"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBWebRequestThreaded.cpp"
+			RelativePath="..\..\code\WebRequestThreaded.cpp"
 			>
 		</File>
 		<File
-			RelativePath="..\..\code\BBWebRequestThreaded.h"
+			RelativePath="..\..\code\WebRequestThreaded.h"
 			>
 		</File>
 	</Files>
