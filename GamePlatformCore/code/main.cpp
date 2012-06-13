@@ -36,8 +36,8 @@ int main(int argc, char *argv[])
  
     //printf("Running request...");
 
-    ////boxreq->Request(HTTPS_GET, "live.2xlgames.com", 443, "/", "");
-    //webreq->Request(HTTPS_GET, "live.2xlgames.com", 443, "/", "");
+    ////boxreq->Request(HTTPS_GET, "yourserver.com", 443, "/", "");
+    //webreq->Request(HTTPS_GET, "yourserver.com", 443, "/", "");
 
     //printf("Completed request...");
 
