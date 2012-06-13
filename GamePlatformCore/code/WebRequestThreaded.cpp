@@ -32,8 +32,8 @@ void WebRequestThreaded::Run()
 {
     printf("\r\nrunning....%d", GetThread());
 
-    //mWebRequest->Request(HTTPS_GET, "live.2xlgames.com", 443, "/", "");
-    mWebRequest->Request(HTTPS_GET, "www.godhhaddy.com", 443, "/", ""); // shows a bad request to ensure it doesn't lock up the main thread or other threads.
+    //mWebRequest->Request(HTTPS_GET, "yourserver.com", 443, "/", "");
+    mWebRequest->Request(HTTPS_GET, "yourincorrecthostnameserverurlandetc.com", 443, "/", ""); // shows a bad request to ensure it doesn't lock up the main thread or other threads.
 
     ThreadUtil::WaitForSeconds(rand() % 10);
 
