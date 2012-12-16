@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="syndication">
+      <UniqueIdentifier>{9af9107b-7845-4c67-b654-6780e333ecac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="syndication\json">
+      <UniqueIdentifier>{819d05a8-c247-4427-b84a-e965e5315e03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ios">
+      <UniqueIdentifier>{eb791097-6cb8-4c4d-bdf9-ce6f47e5953d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\config.h">
+      <Filter>syndication\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\features.h">
+      <Filter>syndication\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\forwards.h">
+      <Filter>syndication\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\json.h">
+      <Filter>syndication\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\json_batchallocator.h">
+      <Filter>syndication\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\reader.h">
+      <Filter>syndication\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\value.h">
+      <Filter>syndication\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\writer.h">
+      <Filter>syndication\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\platform-specific-ios\LocationController.h">
+      <Filter>ios</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Enum.h" />
+    <ClInclude Include="..\..\code\File.h" />
+    <ClInclude Include="..\..\code\FileJson.h" />
+    <ClInclude Include="..\..\code\FileStream.h" />
+    <ClInclude Include="..\..\code\IMutex.h" />
+    <ClInclude Include="..\..\code\Lock.h" />
+    <ClInclude Include="..\..\code\Mutex.h" />
+    <ClInclude Include="..\..\code\Thread.h" />
+    <ClInclude Include="..\..\code\ThreadUtil.h" />
+    <ClInclude Include="..\..\code\UploadThread.h" />
+    <ClInclude Include="..\..\code\WebRequest.h" />
+    <ClInclude Include="..\..\code\WebRequestThreaded.h" />
+    <ClInclude Include="..\..\code\GamePlatformHeader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\code\json_internalarray.inl">
+      <Filter>syndication\json</Filter>
+    </None>
+    <None Include="..\..\code\json_internalmap.inl">
+      <Filter>syndication\json</Filter>
+    </None>
+    <None Include="..\..\code\json_valueiterator.inl">
+      <Filter>syndication\json</Filter>
+    </None>
+    <None Include="..\..\platform-specific-ios\LocationController.m">
+      <Filter>ios</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\json_reader.cpp">
+      <Filter>syndication\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\json_value.cpp">
+      <Filter>syndication\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\json_writer.cpp">
+      <Filter>syndication\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\File.cpp" />
+    <ClCompile Include="..\..\code\FileJson.cpp" />
+    <ClCompile Include="..\..\code\FileStream.cpp" />
+    <ClCompile Include="..\..\code\Lock.cpp" />
+    <ClCompile Include="..\..\code\Mutex.cpp" />
+    <ClCompile Include="..\..\code\Thread.cpp" />
+    <ClCompile Include="..\..\code\ThreadUtil.cpp" />
+    <ClCompile Include="..\..\code\UploadThread.cpp" />
+    <ClCompile Include="..\..\code\WebRequest.cpp" />
+    <ClCompile Include="..\..\code\WebRequestThreaded.cpp" />
+  </ItemGroup>
+</Project>

@@ -1,41 +1,39 @@
 #include "Mutex.h"
 
 namespace GamePlatform {
-
-Mutex::Mutex()
-{
+	Mutex::Mutex()
+	{
 #ifdef _WIN32
-	mMutex = ::CreateMutex(NULL, FALSE, NULL);
+		mMutex = ::CreateMutex(NULL, FALSE, NULL);
 #else
-	pthread_mutex_init(&mMutex, NULL);
+		pthread_mutex_init(&mMutex, NULL);
 #endif
-}
+	}
 
-Mutex::~Mutex()
-{
+	Mutex::~Mutex()
+	{
 #ifdef _WIN32
-	::CloseHandle(mMutex);
+		::CloseHandle(mMutex);
 #else
-	pthread_mutex_destroy(&mMutex);
+		pthread_mutex_destroy(&mMutex);
 #endif
-}
+	}
 
-void Mutex::Lock() const
-{
+	void Mutex::Lock() const
+	{
 #ifdef _WIN32
-	DWORD d = WaitForSingleObject(mMutex, INFINITE);
+		DWORD d = WaitForSingleObject(mMutex, INFINITE);
 #else
-	pthread_mutex_lock(&mMutex);
+		pthread_mutex_lock(&mMutex);
 #endif
-}
+	}
 
-void Mutex::Unlock() const
-{
+	void Mutex::Unlock() const
+	{
 #ifdef _WIN32
-	::ReleaseMutex(mMutex);
+		::ReleaseMutex(mMutex);
 #else
-	pthread_mutex_unlock(&mMutex);
+		pthread_mutex_unlock(&mMutex);
 #endif
-}
-
+	}
 }

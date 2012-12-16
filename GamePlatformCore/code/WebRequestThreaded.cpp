@@ -1,47 +1,45 @@
-#include "Header.h"
+#include "GamePlatformHeader.h"
 #include "WebRequest.h"
 #include "WebRequestThreaded.h"
 #include "Thread.h"
 #include "ThreadUtil.h"
 
-// Sample file - to make a threaded class copy this 
-// file and do your synchronous actions that need 
+// Sample file - to make a threaded class copy this
+// file and do your synchronous actions that need
 // to happen in a thread within the Run method.
 
 namespace GamePlatform
 {
-
-WebRequestThreaded::WebRequestThreaded(WebRequest *p)
-:Thread(false)
-,mWebRequest(p)
-{
-	// Creator will release
-}
-
-WebRequestThreaded::~WebRequestThreaded()
-{
-    if (IsRunning())
+	WebRequestThreaded::WebRequestThreaded(WebRequest *p)
+		:Thread(false)
+		,mWebRequest(p)
 	{
-		SetRelease(true);
-		SetRunning(false);
-        ThreadUtil::WaitForSeconds(1);
+		// Creator will release
 	}
-}
 
-void WebRequestThreaded::Run()
-{
-    printf("\r\nrunning....%d", GetThread());
+	WebRequestThreaded::~WebRequestThreaded()
+	{
+		if (IsRunning())
+		{
+			SetRelease(true);
+			SetRunning(false);
+			ThreadUtil::WaitForSeconds(1);
+		}
+	}
 
-    //mWebRequest->Request(HTTPS_GET, "yourserver.com", 443, "/", "");
-    mWebRequest->Request(HTTPS_GET, "yourincorrecthostnameserverurlandetc.com", 443, "/", ""); // shows a bad request to ensure it doesn't lock up the main thread or other threads.
+	void WebRequestThreaded::Run()
+	{
+		printf("\r\nrunning....%d", GetThread());
 
-    ThreadUtil::WaitForSeconds(rand() % 10);
+		//mWebRequest->Request(HTTPS_GET, "yourserver.com", 443, "/", "");
+		mWebRequest->Request(HTTPS_GET, "google.com", 443, "/", ""); // shows a bad request to ensure it doesn't lock up the main thread or other threads.
 
-    printf("\r\ncompleted running....%d", GetThread());
+		ThreadUtil::WaitForSeconds(rand() % 10);
 
-    //printf(mWebRequest->mMessageBody.c_str());
+		printf("\r\ncompleted running....%d", GetThread());
 
-    //printf("tester");
-}
+		//printf(mWebRequest->mMessageBody.c_str());
 
+		//printf("tester");
+	}
 }

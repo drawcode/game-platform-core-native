@@ -9,13 +9,12 @@
 
 namespace GamePlatform
 {
-
 	UploadThread::UploadThread(const std::string& serverHost, unsigned short serverPort,
-			HttpRequestType serverRequestType, const std::string& serverRequestPath,
-			const std::string& searchDirectory, const std::string& searchExtension)
-			: mServerHost(serverHost), mServerPort(serverPort),
-			mServerRequestType(serverRequestType), mServerRequestPath(serverRequestPath),
-			mSearchDirectory(searchDirectory), mSearchExtension(searchExtension)
+		HttpRequestType serverRequestType, const std::string& serverRequestPath,
+		const std::string& searchDirectory, const std::string& searchExtension)
+		: mServerHost(serverHost), mServerPort(serverPort),
+		mServerRequestType(serverRequestType), mServerRequestPath(serverRequestPath),
+		mSearchDirectory(searchDirectory), mSearchExtension(searchExtension)
 	{
 	}
 
@@ -23,7 +22,6 @@ namespace GamePlatform
 	{
 		std::ifstream file(fileName.c_str(), std::ios::in);
 		if(file) {
-
 			file.seekg(0,std::ios::end);
 			std::streampos fileLength = file.tellg();
 			file.seekg(0,std::ios::beg);
@@ -48,20 +46,15 @@ namespace GamePlatform
 				return;
 
 			if(!request.mMessageBody.empty()) {
-
 				Json::Value resultValue;
 				Json::Reader resultReader;
 				if(resultReader.parse(request.GetMessageBodyString(), resultValue, false)) {
-
 					Json::Value errorValue = resultValue["error"];
 					if(errorValue.isInt() && errorValue.asInt() == 0) {
-
 						// Guaranteed success delete the file
 						unlink(fileName.c_str());
-
 					}
 				}
-
 			}
 		}
 	}
@@ -71,25 +64,17 @@ namespace GamePlatform
 		DIR *dir = opendir(mSearchDirectory.c_str());
 
 		if(dir) {
-
 			dirent* entry;
 			while((entry = readdir(dir)) != NULL) {
-
 				std::string entryName = entry->d_name;
 				std::string::size_type extPos = entryName.find_last_of('.');
 
 				if(extPos != std::string::npos && entryName.substr(extPos+1) == mSearchExtension) {
-
 					uploadFile(mSearchDirectory + "/" + entryName);
-
 				}
-
 			}
-
 		}
 
 		closedir(dir);
-
 	}
-
 }
